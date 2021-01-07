@@ -2,10 +2,12 @@
 
 class Carro():
     
-    Color="naranja"
-    Marca=""
-    Encendido=False
 
+    def __init__(self,ColorCarro,MarcaCarro):
+        
+        self.__Color=ColorCarro
+        self.__MarcaCarro=MarcaCarro
+        self.__Encendido=False
 
     def cambiarEstado(self):
         
@@ -16,6 +18,24 @@ class Carro():
         else:
         
             self.Encendido=True    
+
+
+    def setColor(self,valor):
+                
+        self.Color=valor
+
+    def setMarca(self,valor):
+                
+        self.Marca=valor
+
+    def getColor(self):
+        
+        return self.Color
+
+    def getMarca(self):
+        
+        return self.Marca
+
 
 
 x=Carro()
