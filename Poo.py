@@ -16,3 +16,12 @@ class Carro():
         else:
         
             self.Encendido=True    
+
+
+x=Carro()
+
+print(x.Color)
+
+print(x.cambiarEstado())
+
+print(x.Encendido)
