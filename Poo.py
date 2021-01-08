@@ -11,37 +11,35 @@ class Carro():
 
     def cambiarEstado(self):
         
-        if self.Encendido:
+        if self.__Encendido:
             
-            self.Encendido=False
+            self.__Encendido=False
 
         else:
         
-            self.Encendido=True    
+            self.__Encendido=True    
 
 
     def setColor(self,valor):
                 
-        self.Color=valor
+        self.__Color=valor
 
     def setMarca(self,valor):
                 
-        self.Marca=valor
+        self.__Marca=valor
 
     def getColor(self):
         
-        return self.Color
+        return self.__Color
 
     def getMarca(self):
         
-        return self.Marca
+        return self.__Marca
 
 
+x=Carro("Azul","Lambo")
 
-x=Carro()
-
-print(x.Color)
+print(x.getColor())
 
 print(x.cambiarEstado())
 
-print(x.Encendido)
